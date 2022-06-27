@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+</head>
+
+<body>
+  <div id="app">正在加载中....</div>
+  <script>
+    window.$docsify = {
+      auto2top: true,
+      coverpage: true,
+      executeScript: true,
+      name: 'CA客户端',
+      loadSidebar: true,// 加载自定义侧边栏
+      loadNavbar: true,
+      maxLevel: 6,// 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+      subMaxLevel: 6,// 生成目录的最大层级
+      mergeNavbar: true,
+      count:{
+        countable:true,
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese'
+      },
+      paths: 'auto',
+      search: {
+        placeholder: '搜索',
+        noData: '找不到结果!',
+        depth: 6
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'//防止意外回退
+      }
+    }
+  </script>
+
+<script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script><!-- 代码高亮 -->
+<script src="//unpkg.com/docsify-copy-code"></script> <!-- 一键拷贝代码 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script><!-- 图片缩放 -->
+<script src="//unpkg.com/docsify-count/dist/countable.js"></script><!-- 字数计数 -->
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script><!-- 全文搜索框 -->
+<script src="//cdn.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+</body>
+</html>
